@@ -1,6 +1,8 @@
 var request = require('request');
 var secrets = require('./secrets');
 var fs = require('fs');
+var repoOwner = process.argv[2];
+var repoName = process.argv[3];
 
 
 function getRepoContributors(repoOwner, repoName, cb) {
@@ -16,7 +18,7 @@ function getRepoContributors(repoOwner, repoName, cb) {
 
   });
 }
-getRepoContributors("jquery", "jquery", function(err, result) {
+getRepoContributors(repoOwner, repoName, function(err, result) {
   if(err) {
     console.log("Errors:", err);
   }
