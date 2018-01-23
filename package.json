@@ -19,6 +19,7 @@
   "homepage": "https://github.com/PreranaShrestha/github-avatar-downloader#readme",
   "dependencies": {
     "dotenv": "^4.0.0",
+    "mocha": "^5.0.0",
     "request": "^2.83.0"
   }
 }

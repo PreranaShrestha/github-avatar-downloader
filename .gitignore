@@ -1,5 +1,6 @@
 secrets.js
-.env
+#downloadImage file
+avatars
 # Logs
 logs
 *.log
